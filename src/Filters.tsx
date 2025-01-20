@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimplifiedUser } from './Type.tsx';
+import { SimplifiedUser } from './Users.tsx';
 // update
 type FiltersProps = {
   nameFilter: string;

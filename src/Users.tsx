@@ -1,7 +1,3 @@
-// Type.tsx
-// Type shared by all project components
-
-// Simplified type for one user
 export type SimplifiedUser = {
     id: number;
     firstName: string;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Filters from './Filters.tsx';
-import UserTable from './userTable.tsx';
-import { SimplifiedUser } from './Type.tsx';
+import UserTable from './usersTable.tsx';
+import { SimplifiedUser } from './Users.tsx';
 
 function App() {
   const [users, setUsers] = useState<Array<SimplifiedUser>>([]);
@@ -11,7 +11,7 @@ function App() {
   const [cityFilter, setCityFilter] = useState('');
   const [highlightOldest, setHighlightOldest] = useState(false);
 
-  // Retrieve users from the API
+// Retrieve users
   useEffect(() => {
     axios.get('https://dummyjson.com/users').then((response) => {
       // Filter data to keep only necessary fields
@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Filter management component */}
+      {}
       <Filters
         nameFilter={nameFilter}
         setNameFilter={setNameFilter}
@@ -74,7 +74,7 @@ function App() {
         setHighlightOldest={setHighlightOldest}
         users={users}
       />
-      {/* Users Table*/}
+      {}
       <UserTable users={filteredUsers} />
     </div>
   );

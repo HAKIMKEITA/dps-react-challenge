@@ -1,8 +1,6 @@
 import React from 'react';
 
-
-import { SimplifiedUser } from './Type.tsx';
-
+import { SimplifiedUser } from './Users.tsx';
 
 function UserRow({ isOldest, firstName, lastName, city, birthDate }: SimplifiedUser) {
   return (

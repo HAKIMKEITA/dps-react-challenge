@@ -1,6 +1,6 @@
 import React from 'react';
-import UserRow from './userRow.tsx';
-import { SimplifiedUser } from './Type.tsx';
+import UserRow from './userList.tsx';
+import { SimplifiedUser } from './Users.tsx';
 
 type UserTableProps = {
   users: SimplifiedUser[];
